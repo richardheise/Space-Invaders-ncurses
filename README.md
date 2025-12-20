@@ -1,46 +1,47 @@
+# Space Invaders ncurses
 
-# Space Invaders game using ncurses lib
+Esta é uma implementação simples do clássico jogo Space Invaders utilizando a biblioteca ncurses para renderização no terminal.
 
-## Instruções de compilação:
+## Dependências
 
-## ATENÇÃO:
+Certifique-se de ter a biblioteca ncurses instalada em seu sistema. Você pode instalá-la usando um dos seguintes comandos, dependendo da sua distribuição Linux:
 
-## GARANTA QUE VOCÊ POSSUI A BIBLIOTECA NCURSES INSTALADA! Você pode adquirí-la através do comando:
+**Debian/Ubuntu:**
+```bash
+sudo apt-get install libncurses5-dev libncursesw5-dev
+```
 
-### Distribuição Debian/Ubunto {
+**CentOS/RHEL/Fedora (até a versão 21):**
+```bash
+sudo yum install ncurses-devel
+```
 
-`$ sudo apt-get install libncurses5-dev libncursesw5-dev`
+**Fedora (versão 22 e posteriores):**
+```bash
+sudo dnf install ncurses-devel
+```
 
-}
+## Como Compilar e Executar
 
-### Distribuição CentOS/RHEL/Scientific Linux 6.x/7.x e Fedora Linux 21 ou mais antigo {
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/richardheise/Space-Invaders-ncurses.git
+    cd Space-Invaders-ncurses
+    ```
 
-`$ sudo yum install ncurses-devel`
+2.  **Compile o jogo:**
+    ```bash
+    make
+    ```
+    **Observação:** O `makefile` atual precisa ser atualizado para refletir a nova estrutura de pastas (`src`, `inc`, `bin`).
 
-}
+3.  **Execute o jogo:**
+    ```bash
+    ./bin/main
+    ```
 
-### Distribuição Fedora 22.x+ {
+4.  **Divirta-se!**
 
-`$ sudo dnf install ncurses-devel`
+---
 
-}
-
-### 1). Coloque todos os arquivos em uma só pasta
-
-
-### 2). Vá para a pasta supracitada. 
-
-
-### 3). Digite no terminal:
-
-`$ make`
-
-
-
-### 4). Digite no terminal:
-
-`$ ./main`
-
-## 5). Divirta-se!
-
-Feito com muito suor por Richard Heise rfhf19@inf.ufpr.br
+Desenvolvido por Richard Heise (rfhf19@inf.ufpr.br)
